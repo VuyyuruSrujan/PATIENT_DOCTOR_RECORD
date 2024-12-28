@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "PatientDocRecords_backend": {
+      "main": "src/PatientDocRecords_backend/main.mo",
+      "type": "motoko"
+    },
+    "PatientDocRecords_frontend": {
+      "dependencies": [
+        "PatientDocRecords_backend"
+      ],
+      "source": [
+        "src/PatientDocRecords_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "PatientDocRecords_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
